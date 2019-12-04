@@ -63,5 +63,5 @@ for batch_idx in count(1):
         break
 
 print('Loss: {:.6f} after {} batches'.format(loss, batch_idx))
-print('==> Learned function:\t' + poly_desc(fc.weight.view(-1), fc.bias))
-print('==> Actual function:\t' + poly_desc(W_target.view(-1), b_target))
+print('==> Learned function is :\t' + poly_desc(fc.weight.view(-1), fc.bias))
+print('==> Actual function is:\t' + poly_desc(W_target.view(-1), b_target))
